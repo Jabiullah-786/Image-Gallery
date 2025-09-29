@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>The Modern Image Showcase</h1>
+
+    <!-- Category/Filter Buttons -->
+    <div class="filter-controls">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature 🌿</button>
+        <button class="filter-btn" data-category="city">City 🏙️</button>
+        <button class="filter-btn" data-category="abstract">Abstract 🖼️</button>
+    </div>
+
+    <!-- Image Gallery Grid -->
+    <div class="gallery-grid">
+        <!-- Image 1: Nature -->
+        <img src="https://picsum.photos/id/1018/300/300" alt="Forest View" class="gallery-item" data-category="nature">
+        <!-- Image 2: City -->
+        <img src="https://picsum.photos/id/10/300/300" alt="Skyscrapers" class="gallery-item" data-category="city">
+        <!-- Image 3: Abstract -->
+        <img src="https://picsum.photos/id/60/300/300" alt="Geometric Shapes" class="gallery-item" data-category="abstract">
+        <!-- Image 4: Nature -->
+        <img src="https://picsum.photos/id/1040/300/300" alt="Mountain Lake" class="gallery-item" data-category="nature">
+        <!-- Image 5: City -->
+        <img src="https://picsum.photos/id/237/300/300" alt="Dog in City" class="gallery-item" data-category="city">
+        <!-- Image 6: Abstract -->
+        <img src="https://picsum.photos/id/900/300/300" alt="Textured Wall" class="gallery-item" data-category="abstract">
+        <!-- Image 7: Nature -->
+        <img src="https://picsum.photos/id/1080/300/300" alt="Waterfall" class="gallery-item" data-category="nature">
+        <!-- Image 8: City -->
+        <img src="https://picsum.photos/id/11/300/300" alt="Street View" class="gallery-item" data-category="city">
+    </div>
+
+    <!-- Lightbox View (Initially hidden) -->
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">❮</button>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="Enlarged Image">
+        <button class="nav-btn next-btn">❯</button>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
